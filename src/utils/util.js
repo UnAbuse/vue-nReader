@@ -11,7 +11,7 @@ const localStroage = window.localStorage
 
 export default {
 
-  staticPath: 'http://statics.zhuishushenqi.com',
+  staticPath: '',
 
   /**
      * 获取localstroage的数据
