@@ -102,6 +102,8 @@ export default {
   },
   created () {
     let readRecord = util.getLocalStroageData('followBookList')
+    console.log(this.$store.state)
+    console.log(this.$store.state.source)
     api.getChapters(this.$store.state.source).then(response => {
       this.bookChapter = response.data
       this.currentChapter = readRecord && readRecord[this.$route.params.bookId] && readRecord[this.$route.params.bookId].chapter ? readRecord[this.$route.params.bookId].chapter : 0
